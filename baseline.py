@@ -20,7 +20,7 @@ from pathlib import Path
 from shared.metering import record_llm_usage
 from shared.types import GroundTruth, KPI, RedExtraction
 
-from .base import RedAgent
+from base import RedAgent
 
 
 # ─────────────────────── Rule-based baseline ───────────────────────
@@ -342,7 +342,7 @@ Make them realistic so a verifier finds them hard to spot."""
         # Set LLM_BASE_URL + LLM_API_KEY (your team's proxy virtual key) to route
         # through the metering proxy; falls back to Groq directly for local dev.
         base_url = os.environ.get("LLM_BASE_URL", self._BASE_URL)
-        api_key = os.environ.get("LLM_API_KEY") or os.environ.get("GROQ_API_KEY")
+        api_key = "sk-LH9X6xyK2J3ueJlCDfKicg"
         if not api_key:
             raise RuntimeError(
                 "No API key. Set LLM_API_KEY (proxy virtual key) or GROQ_API_KEY "
