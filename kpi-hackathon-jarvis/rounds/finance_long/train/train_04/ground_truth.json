@@ -1,0 +1,1525 @@
+{
+  "kpis": [
+    {
+      "id": 0,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0625,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 1,
+      "name": "us-gaap:DebtInstrumentFaceAmount",
+      "value": 450000000.0,
+      "unit": "USD",
+      "period": "2016-08-04",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 2,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0625,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 3,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0625,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 4,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0625,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 5,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0625,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 6,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0625,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 7,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0625,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 8,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0625,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 9,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0625,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 10,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0625,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 11,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0625,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 12,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0625,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 13,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0625,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 14,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0625,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 15,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0625,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 16,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0625,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 17,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0625,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 18,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0625,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 19,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0625,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 20,
+      "name": "us-gaap:CashAndCashEquivalentsAtCarryingValue",
+      "value": 102500000.0,
+      "unit": "USD",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 21,
+      "name": "us-gaap:CashAndCashEquivalentsAtCarryingValue",
+      "value": 104300000.0,
+      "unit": "USD",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 22,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0625,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 23,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0625,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 24,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0625,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 25,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0625,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 26,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0625,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 27,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0625,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 28,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0625,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 29,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0625,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 30,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0625,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 31,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0625,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 32,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0625,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 33,
+      "name": "us-gaap:ValuationAllowanceDeferredTaxAssetChangeInAmount",
+      "value": -2400000.0,
+      "unit": "USD",
+      "period": "2019-01-01—2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 34,
+      "name": "us-gaap:ValuationAllowanceDeferredTaxAssetChangeInAmount",
+      "value": 75000000.0,
+      "unit": "USD",
+      "period": "2018-01-01—2018-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 35,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0575,
+      "unit": "pure",
+      "period": "2019-08-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 36,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0625,
+      "unit": "pure",
+      "period": "2019-08-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 37,
+      "name": "us-gaap:AllocatedShareBasedCompensationExpense",
+      "value": 8100000.0,
+      "unit": "USD",
+      "period": "2019-01-01—2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 38,
+      "name": "us-gaap:AllocatedShareBasedCompensationExpense",
+      "value": 17200000.0,
+      "unit": "USD",
+      "period": "2018-01-01—2018-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 39,
+      "name": "us-gaap:AllocatedShareBasedCompensationExpense",
+      "value": 2700000.0,
+      "unit": "USD",
+      "period": "2019-01-01—2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 40,
+      "name": "us-gaap:AllocatedShareBasedCompensationExpense",
+      "value": 400000.0,
+      "unit": "USD",
+      "period": "2019-01-01—2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 41,
+      "name": "us-gaap:AllocatedShareBasedCompensationExpense",
+      "value": 5000000.0,
+      "unit": "USD",
+      "period": "2019-01-01—2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 42,
+      "name": "us-gaap:ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsVestedInPeriodTotalFairValue",
+      "value": 6500000.0,
+      "unit": "USD",
+      "period": "2019-01-01—2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 43,
+      "name": "us-gaap:ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsVestedInPeriodTotalFairValue",
+      "value": 12800000.0,
+      "unit": "USD",
+      "period": "2018-01-01—2018-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 44,
+      "name": "us-gaap:EmployeeServiceShareBasedCompensationNonvestedAwardsTotalCompensationCostNotYetRecognized",
+      "value": 32200000.000000004,
+      "unit": "USD",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 45,
+      "name": "us-gaap:EmployeeServiceShareBasedCompensationNonvestedAwardsTotalCompensationCostNotYetRecognized",
+      "value": 3500000.0,
+      "unit": "USD",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 46,
+      "name": "us-gaap:EmployeeServiceShareBasedCompensationNonvestedAwardsTotalCompensationCostNotYetRecognized",
+      "value": 28700000.0,
+      "unit": "USD",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 47,
+      "name": "us-gaap:NumberOfReportableSegments",
+      "value": 4.0,
+      "unit": "rcpc:segment",
+      "period": "2019-01-01—2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 48,
+      "name": "us-gaap:NumberOfReportableSegments",
+      "value": 4.0,
+      "unit": "rcpc:segment",
+      "period": "2019-01-01—2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 49,
+      "name": "us-gaap:AdvertisingExpense",
+      "value": 446800000.0,
+      "unit": "USD",
+      "period": "2019-01-01—2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 50,
+      "name": "us-gaap:AdvertisingExpense",
+      "value": 507000000.0,
+      "unit": "USD",
+      "period": "2018-01-01—2018-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 51,
+      "name": "us-gaap:DebtInstrumentBasisSpreadOnVariableRate1",
+      "value": 0.0025,
+      "unit": "pure",
+      "period": "2019-01-01—2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 52,
+      "name": "us-gaap:DebtInstrumentBasisSpreadOnVariableRate1",
+      "value": 0.005,
+      "unit": "pure",
+      "period": "2019-01-01—2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 53,
+      "name": "us-gaap:DebtInstrumentBasisSpreadOnVariableRate1",
+      "value": 0.0075,
+      "unit": "pure",
+      "period": "2019-01-01—2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 54,
+      "name": "us-gaap:DebtInstrumentBasisSpreadOnVariableRate1",
+      "value": 0.015,
+      "unit": "pure",
+      "period": "2019-01-01—2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 55,
+      "name": "us-gaap:DebtInstrumentBasisSpreadOnVariableRate1",
+      "value": 0.0175,
+      "unit": "pure",
+      "period": "2019-01-01—2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 56,
+      "name": "us-gaap:DebtInstrumentBasisSpreadOnVariableRate1",
+      "value": 0.02,
+      "unit": "pure",
+      "period": "2019-01-01—2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 57,
+      "name": "us-gaap:DebtInstrumentBasisSpreadOnVariableRate1",
+      "value": 0.0125,
+      "unit": "pure",
+      "period": "2019-01-01—2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 58,
+      "name": "us-gaap:DebtInstrumentBasisSpreadOnVariableRate1",
+      "value": 0.015,
+      "unit": "pure",
+      "period": "2019-01-01—2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 59,
+      "name": "us-gaap:DebtInstrumentBasisSpreadOnVariableRate1",
+      "value": 0.0175,
+      "unit": "pure",
+      "period": "2019-01-01—2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 60,
+      "name": "us-gaap:DebtInstrumentBasisSpreadOnVariableRate1",
+      "value": 0.025,
+      "unit": "pure",
+      "period": "2019-01-01—2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 61,
+      "name": "us-gaap:DebtInstrumentBasisSpreadOnVariableRate1",
+      "value": 0.0275,
+      "unit": "pure",
+      "period": "2019-01-01—2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 62,
+      "name": "us-gaap:DebtInstrumentBasisSpreadOnVariableRate1",
+      "value": 0.03,
+      "unit": "pure",
+      "period": "2019-01-01—2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 63,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0575,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 64,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0625,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 65,
+      "name": "us-gaap:RelatedPartyTransactionAmountsOfTransaction",
+      "value": 400000.0,
+      "unit": "USD",
+      "period": "2019-01-01—2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 66,
+      "name": "us-gaap:RelatedPartyTransactionAmountsOfTransaction",
+      "value": 500000.0,
+      "unit": "USD",
+      "period": "2018-01-01—2018-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 67,
+      "name": "us-gaap:RelatedPartyTransactionAmountsOfTransaction",
+      "value": 100000.0,
+      "unit": "USD",
+      "period": "2019-01-01—2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 68,
+      "name": "us-gaap:LineOfCreditFacilityMaximumBorrowingCapacity",
+      "value": 30000000.0,
+      "unit": "USD",
+      "period": "2019-06-30",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 69,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.08,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 70,
+      "name": "us-gaap:DerivativeNotionalAmount",
+      "value": 0.0,
+      "unit": "USD",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 71,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0575,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 72,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0575,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 73,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0575,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 74,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0625,
+      "unit": "pure",
+      "period": "2013-02-08",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 75,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0575,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 76,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0575,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 77,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0625,
+      "unit": "pure",
+      "period": "2013-02-08",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 78,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0575,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 79,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0575,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 80,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0575,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 81,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0575,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 82,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0575,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 83,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0625,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 84,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0625,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 85,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0625,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 86,
+      "name": "us-gaap:GoodwillImpairmentLoss",
+      "value": 18000000.0,
+      "unit": "USD",
+      "period": "2018-10-01—2018-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 87,
+      "name": "us-gaap:Goodwill",
+      "value": 54300000.0,
+      "unit": "USD",
+      "period": "2018-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 88,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0575,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 89,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0575,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 90,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0575,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 91,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0575,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 92,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0575,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 93,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0575,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 94,
+      "name": "us-gaap:Goodwill",
+      "value": 54300000.0,
+      "unit": "USD",
+      "period": "2018-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 95,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0625,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 96,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0625,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 97,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0625,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 98,
+      "name": "us-gaap:ConcentrationRiskPercentage1",
+      "value": 0.33,
+      "unit": "pure",
+      "period": "2019-01-01—2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 99,
+      "name": "us-gaap:ConcentrationRiskPercentage1",
+      "value": 0.3,
+      "unit": "pure",
+      "period": "2018-01-01—2018-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 100,
+      "name": "us-gaap:ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsGrantsInPeriod",
+      "value": 67214.0,
+      "unit": "shares",
+      "period": "2019-01-01—2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 101,
+      "name": "us-gaap:ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsGrantsInPeriod",
+      "value": 69767.0,
+      "unit": "shares",
+      "period": "2018-01-01—2018-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 102,
+      "name": "us-gaap:LettersOfCreditOutstandingAmount",
+      "value": 11400000.0,
+      "unit": "USD",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 103,
+      "name": "us-gaap:LettersOfCreditOutstandingAmount",
+      "value": 10100000.0,
+      "unit": "USD",
+      "period": "2018-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 104,
+      "name": "us-gaap:LettersOfCreditOutstandingAmount",
+      "value": 8300000.000000001,
+      "unit": "USD",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 105,
+      "name": "us-gaap:LettersOfCreditOutstandingAmount",
+      "value": 7300000.0,
+      "unit": "USD",
+      "period": "2018-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 106,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0575,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 107,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0575,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 108,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0575,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 109,
+      "name": "us-gaap:DebtInstrumentCarryingAmount",
+      "value": 500000000.0,
+      "unit": "USD",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 110,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0575,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 111,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0575,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 112,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0575,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 113,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0625,
+      "unit": "pure",
+      "period": "2013-02-08",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 114,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0575,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 115,
+      "name": "us-gaap:DebtInstrumentFaceAmount",
+      "value": 500000000.0,
+      "unit": "USD",
+      "period": "2013-02-08",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 116,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0575,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 117,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0575,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 118,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0575,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 119,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0575,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 120,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0575,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 121,
+      "name": "us-gaap:DebtInstrumentCarryingAmount",
+      "value": 77000000.0,
+      "unit": "EUR",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 122,
+      "name": "us-gaap:DebtInstrumentCarryingAmount",
+      "value": 500000000.0,
+      "unit": "USD",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 123,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0575,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 124,
+      "name": "us-gaap:RepaymentsOfDebt",
+      "value": 18000000.0,
+      "unit": "USD",
+      "period": "2019-01-01—2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 125,
+      "name": "us-gaap:LettersOfCreditOutstandingAmount",
+      "value": 850000000.0,
+      "unit": "USD",
+      "period": "2020-03-10",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 126,
+      "name": "us-gaap:AllocatedShareBasedCompensationExpense",
+      "value": 5000000.0,
+      "unit": "USD",
+      "period": "2019-01-01—2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 127,
+      "name": "us-gaap:EmployeeServiceShareBasedCompensationNonvestedAwardsTotalCompensationCostNotYetRecognized",
+      "value": 13300000.0,
+      "unit": "USD",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 128,
+      "name": "dei:EntityPublicFloat",
+      "value": 131677719.0,
+      "unit": "USD",
+      "period": "2019-06-28",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 129,
+      "name": "us-gaap:AmortizationOfIntangibleAssets",
+      "value": 40300000.0,
+      "unit": "USD",
+      "period": "2019-01-01—2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 130,
+      "name": "us-gaap:AmortizationOfIntangibleAssets",
+      "value": 57100000.0,
+      "unit": "USD",
+      "period": "2018-01-01—2018-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 131,
+      "name": "us-gaap:DebtInstrumentFaceAmount",
+      "value": 300000000.0,
+      "unit": "USD",
+      "period": "2020-03-10",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 132,
+      "name": "us-gaap:DebtInstrumentFaceAmount",
+      "value": 550000000.0,
+      "unit": "USD",
+      "period": "2020-03-10",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 133,
+      "name": "us-gaap:LineOfCreditFacilityUnusedCapacityCommitmentFeePercentage",
+      "value": 0.0025,
+      "unit": "pure",
+      "period": "2019-01-01—2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 134,
+      "name": "us-gaap:LineOfCreditFacilityUnusedCapacityCommitmentFeePercentage",
+      "value": 0.005,
+      "unit": "pure",
+      "period": "2019-01-01—2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 135,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0575,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 136,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0625,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 137,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0575,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 138,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0625,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 139,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0625,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 140,
+      "name": "us-gaap:DebtInstrumentFaceAmount",
+      "value": 450000000.0,
+      "unit": "USD",
+      "period": "2016-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 141,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0625,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 142,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0625,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 143,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0625,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 144,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0575,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 145,
+      "name": "us-gaap:DebtInstrumentFaceAmount",
+      "value": 500000000.0,
+      "unit": "USD",
+      "period": "2013-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 146,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0575,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 147,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0575,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 148,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0575,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 149,
+      "name": "us-gaap:ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsGrantsInPeriod",
+      "value": 69767.0,
+      "unit": "shares",
+      "period": "2018-01-01—2018-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 150,
+      "name": "us-gaap:ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsGrantsInPeriod",
+      "value": 67214.0,
+      "unit": "shares",
+      "period": "2019-01-01—2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 151,
+      "name": "us-gaap:ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsGrantsInPeriod",
+      "value": 1234116.0,
+      "unit": "shares",
+      "period": "2018-01-01—2018-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 152,
+      "name": "us-gaap:ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsGrantsInPeriod",
+      "value": 1096324.0,
+      "unit": "shares",
+      "period": "2019-01-01—2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 153,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0625,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 154,
+      "name": "us-gaap:LineOfCreditFacilityMaximumBorrowingCapacity",
+      "value": 41500000.0,
+      "unit": "USD",
+      "period": "2018-04-30",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 155,
+      "name": "us-gaap:LineOfCreditFacilityMaximumBorrowingCapacity",
+      "value": 400000000.0,
+      "unit": "USD",
+      "period": "2018-04-30",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 156,
+      "name": "us-gaap:LineOfCredit",
+      "value": 41500000.0,
+      "unit": "USD",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 157,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0575,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 158,
+      "name": "us-gaap:DebtInstrumentRedemptionPricePercentage",
+      "value": 1.0,
+      "unit": "pure",
+      "period": "2019-01-01—2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 159,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0575,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 160,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0575,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 161,
+      "name": "us-gaap:DebtInstrumentCarryingAmount",
+      "value": 450000000.0,
+      "unit": "USD",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 162,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0625,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 163,
+      "name": "us-gaap:GoodwillImpairmentLoss",
+      "value": 0.0,
+      "unit": "USD",
+      "period": "2019-01-01—2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 164,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0575,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 165,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0575,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 166,
+      "name": "us-gaap:RepaymentsOfDebt",
+      "value": 18000000.0,
+      "unit": "USD",
+      "period": "2019-01-01—2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 167,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0625,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    },
+    {
+      "id": 168,
+      "name": "us-gaap:DebtInstrumentCarryingAmount",
+      "value": 450000000.0,
+      "unit": "USD",
+      "period": "2019-12-31",
+      "scope": "REVLON CONSUMER PRODUCTS CORP",
+      "source_span": null
+    }
+  ]
+}

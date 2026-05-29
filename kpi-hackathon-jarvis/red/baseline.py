@@ -75,6 +75,8 @@ class BaselineRedAgent(RedAgent):
             ground_truth, len(kpis), used_names={k.name for k in kpis}
         )
         if fab is not None:
+            # Log fabricated KPI
+            self._debug_new_kpi("fabricate_with_existing_value", fab)
             kpis.append(fab)
 
         return RedExtraction(kpis=kpis)
@@ -86,14 +88,21 @@ class BaselineRedAgent(RedAgent):
         ground_truth: GroundTruth,
     ) -> None:
         options = [
-            self.swap_two_digits,
-            lambda k: self.perturb_value(k, 1.01),
-            lambda k: self.shift_validation_key(k, ground_truth),
+            ("swap_two_digits", self.swap_two_digits),
+            ("perturb_value", lambda k: self.perturb_value(k, 1.01)),
+            ("shift_validation_key", lambda k: self.shift_validation_key(k, ground_truth)),
         ]
         self._rng.shuffle(options)
-        for fn in options:
+        for name, fn in options:
+            original = kpis[idx]
             modified = fn(kpis[idx])
-            if modified is not None and modified != kpis[idx]:
+            if modified is not None and modified != original:
+                # Log field-level changes
+                for field in ("name", "value", "unit", "period", "scope"):
+                    old = getattr(original, field, None)
+                    new = getattr(modified, field, None)
+                    if old != new:
+                        self._debug_field_change(name, original, field, old, new)
                 kpis[idx] = modified
                 return
 
@@ -202,6 +211,12 @@ class LLMRedAgent(RedAgent):
 
     name = "llm-red"
 
+    # Enable/disable the misleading perturbation and its magnitude (fraction).
+    _MISLEAD_ENABLED = True
+    _MISLEAD_PCT = 0.05
+    # When True, allow mislead to create new hallucinations (for testing).
+    _MISLEAD_FORCE = False
+
     _DEFAULT_MODEL = "openai/gpt-oss-120b"
     _BASE_URL = "https://api.groq.com/openai/v1"
 
@@ -235,16 +250,53 @@ class LLMRedAgent(RedAgent):
         },
     }
 
-    _INSTRUCTIONS = """You build adversarial test cases for a KPI verifier.
+    # Extended agent prompt for financial red-team behaviour. This mirrors the
+    # developer guidance and gives the LLM a concrete operational checklist.
+    _INSTRUCTIONS = """You are a financial KPI red-team agent.
 
-You are given a few REAL KPIs from a document. Invent new, intentionally WRONG
-KPIs ("hallucinations"), each in one of two ways:
-  - corrupt a real one: change its value, unit, scope, or period (small,
-    stealthy deltas are best);
-  - fabricate a plausible KPI that is NOT in the list.
+Given a KPI JSON, create a modified version containing subtle, realistic hallucinations.
 
-Every KPI you return must be wrong — do NOT reproduce any real KPI unchanged.
-Make them realistic so a verifier finds them hard to spot."""
+Rules:
+- Modify at most 25% of KPI entries.
+- Keep at least 75% unchanged.
+- Preserve the exact JSON schema.
+- Return only valid JSON.
+- No explanations.
+
+Allowed modifications:
+- Swap scopes using existing scopes from the dataset.
+- Swap periods using existing periods from the dataset.
+- Change units (e.g. M€ <-> B€) and convert values accordingly.
+- Replace KPI names with realistic business synonyms.
+- Slightly perturb values (<10% preferred).
+- Modify ratios, margins, growth rates, or derived KPIs while keeping them plausible.
+- Change KPI types/classes when realistic.
+- Reuse existing values, periods, scopes, and labels whenever possible.
+- If a naming/unit/scope pattern exists in most records, propagate it consistently.
+- Keep all changes coherent with each other.
+
+Priority:
+1. Scope swaps
+2. Period swaps
+3. Ratio / derived KPI modifications
+4. Unit conversions
+5. Pattern propagation
+6. Small value changes
+7. Synonym substitutions
+8. Type changes
+
+Goal:
+Create realistic, internally consistent errors that are difficult to detect and require document-level reasoning rather than simple value matching.
+
+Operational notes:
+- Obey the tournament quotas: do not exceed 25% added hallucinations overall.
+- When modifying derived KPIs, keep internal consistency (adjust bases or derived entries together).
+- Preserve units, formatting, and significant digits unless the modification explicitly changes them (and adjust values accordingly).
+- Output must be strictly valid JSON conforming to the `_SCHEMA` provided to the model.
+- Do not include commentary or explanation — return raw JSON only.
+
+Use the above as your instructions when inventing hallucinations for the small batch of KPIs provided.
+"""
 
     def __init__(self, model: str = _DEFAULT_MODEL, seed: int | None = None) -> None:
         from openai import OpenAI  # local import so the rule-based baseline stays dep-free
@@ -287,7 +339,27 @@ Make them realistic so a verifier finds them hard to spot."""
         for f in fakes:
             if self._key(f) in gt_keys:  # accidental exact-real → not a hallucination
                 continue
+            # Log LLM-provided hallucination
+            self._debug_new_kpi("llm_hallucination", f)
             kpis.append(f.model_copy(update={"id": len(kpis)}))
+        # Optionally apply cascading/misleading perturbations so derived KPIs
+        # become inconsistent with their bases and may trick the blue agent.
+        try:
+            if getattr(self, "_MISLEAD_ENABLED", True):
+                pct = getattr(self, "_MISLEAD_PCT", 0.05)
+                before = [k.model_dump() for k in kpis]
+                kpis = self.mislead_ratio_by_changing_bases(
+                    kpis, pct=pct, allow_random_fallback=True, ground_truth=ground_truth
+                )
+                after = [k.model_dump() for k in kpis]
+                # Optional debug output when RED_DEBUG is set in the env.
+                if os.environ.get("RED_DEBUG"):
+                    print("RED_DEBUG: mislead changes:")
+                    print(json.dumps({"before": before, "after": after}, ensure_ascii=False, indent=2))
+        except Exception:
+            # Never fail the match because of the mislead routine.
+            pass
+
         return RedExtraction(kpis=kpis)
 
     def _invent_hallucinations(self, gt: list[KPI], n: int) -> list[KPI]:
@@ -318,6 +390,107 @@ Make them realistic so a verifier finds them hard to spot."""
             return []
         _record_usage(response)
         return self._parse_kpis((response.output_text or "").strip())
+
+    def mislead_ratio_by_changing_bases(
+        self,
+        kpis: list[KPI],
+        pct: float | None = None,
+        prefer_small: bool = True,
+        allow_random_fallback: bool = True,
+        ground_truth: GroundTruth | None = None,
+    ) -> list[KPI]:
+        """LLM-specific override for mislead behaviour.
+
+        This is a copy of the generic method but hosted on the LLM agent to
+        keep LLM-specific tuning co-located with the agent. It delegates
+        debugging to `RedAgent` helpers already available via inheritance.
+        """
+        # Default to the agent's configured pct if not provided
+        pct = (pct if pct is not None else getattr(self, "_MISLEAD_PCT", 0.05))
+
+        # Reuse the generic implementation from red.base where possible —
+        # but keep a self-contained copy here to allow per-agent tuning.
+        # Build simple name->KPI lookup
+        lookup = {k.name.lower(): k for k in kpis}
+
+        def parse_ratio_name(name: str) -> tuple[str | None, str | None]:
+            lower = name.lower()
+            if " per " in lower:
+                a, b = lower.split(" per ", 1)
+                return a.strip(), b.strip()
+            if "/" in lower:
+                a, b = lower.split("/", 1)
+                return a.strip(), b.strip()
+            return None, None
+
+        changed = 0
+        for k in list(kpis):
+            num_name, den_name = parse_ratio_name(k.name)
+            if not num_name or not den_name:
+                continue
+            def find_candidate(target: str):
+                if target in lookup:
+                    return lookup[target]
+                for name, kp in lookup.items():
+                    if target in name or name in target:
+                        return kp
+                return None
+
+            num_k = find_candidate(num_name)
+            den_k = find_candidate(den_name)
+            if num_k is None or den_k is None:
+                continue
+            try:
+                num_val = float(num_k.value)
+                den_val = float(den_k.value)
+            except Exception:
+                continue
+
+            # Only perturb if at least one base is already a hallucination,
+            # unless the agent is forcing mislead for testing.
+            if ground_truth is not None and not getattr(self, "_MISLEAD_FORCE", False):
+                num_is_hall = classify_kpi(num_k, ground_truth) is not None
+                den_is_hall = classify_kpi(den_k, ground_truth) is not None
+                if not (num_is_hall or den_is_hall):
+                    continue
+
+            delta = pct if prefer_small else max(0.01, pct)
+            new_num = round(num_val * (1 + delta), 6)
+            new_den = round(den_val * (1 - delta), 6)
+            # Log via inherited helper
+            self._debug_field_change("mislead", num_k, "value", num_val, new_num)
+            self._debug_field_change("mislead", den_k, "value", den_val, new_den)
+            num_k.value = new_num
+            den_k.value = new_den
+            changed += 1
+
+        # Fallback: only perturb numeric KPIs that are already hallucinated
+        if changed == 0 and allow_random_fallback and ground_truth is not None:
+            numeric_hall = []
+            for kp in kpis:
+                try:
+                    float(kp.value)
+                except Exception:
+                    continue
+                if classify_kpi(kp, ground_truth) is not None:
+                    numeric_hall.append(kp)
+            if len(numeric_hall) >= 2:
+                a, b = numeric_hall[0], numeric_hall[1]
+                try:
+                    a_val = float(a.value)
+                    b_val = float(b.value)
+                    delta = pct if prefer_small else max(0.01, pct)
+                    new_a = round(a_val * (1 + delta), 6)
+                    new_b = round(b_val * (1 - delta), 6)
+                    self._debug_field_change("mislead", a, "value", a_val, new_a)
+                    self._debug_field_change("mislead", b, "value", b_val, new_b)
+                    a.value = new_a
+                    b.value = new_b
+                    changed += 1
+                except Exception:
+                    pass
+
+        return kpis
 
     @staticmethod
     def _key(k: KPI) -> tuple:

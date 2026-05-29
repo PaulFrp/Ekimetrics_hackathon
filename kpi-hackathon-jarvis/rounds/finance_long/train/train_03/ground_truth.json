@@ -1,0 +1,1147 @@
+{
+  "kpis": [
+    {
+      "id": 0,
+      "name": "us-gaap:GainsLossesOnExtinguishmentOfDebt",
+      "value": -48000000.0,
+      "unit": "USD",
+      "period": "2018-06-01",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 1,
+      "name": "us-gaap:DeferredFinanceCostsNet",
+      "value": 74000000.0,
+      "unit": "USD",
+      "period": "2018-06-01",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 2,
+      "name": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+      "value": 15000000.0,
+      "unit": "USD",
+      "period": "2020-01-01—2020-12-31",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 3,
+      "name": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+      "value": 11000000.0,
+      "unit": "USD",
+      "period": "2019-01-01—2019-12-31",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 4,
+      "name": "us-gaap:GoodwillImpairmentLoss",
+      "value": 0.0,
+      "unit": "USD",
+      "period": "2020-04-01—2020-06-30",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 5,
+      "name": "us-gaap:GoodwillImpairmentLoss",
+      "value": 0.0,
+      "unit": "USD",
+      "period": "2020-01-01—2020-03-31",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 6,
+      "name": "us-gaap:LossContingencyDamagesSoughtValue",
+      "value": 23000000.0,
+      "unit": "USD",
+      "period": "2018-04-01—2018-04-30",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 7,
+      "name": "us-gaap:ValuationAllowanceDeferredTaxAssetChangeInAmount",
+      "value": -579000000.0,
+      "unit": "USD",
+      "period": "2020-01-01—2020-12-31",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 8,
+      "name": "us-gaap:ValuationAllowanceDeferredTaxAssetChangeInAmount",
+      "value": -82000000.0,
+      "unit": "USD",
+      "period": "2019-01-01—2019-12-31",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 9,
+      "name": "us-gaap:GoodwillImpairmentLoss",
+      "value": 243000000.0,
+      "unit": "USD",
+      "period": "2018-01-01",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 10,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.05,
+      "unit": "pure",
+      "period": "2019-12-30",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 11,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.05,
+      "unit": "pure",
+      "period": "2019-12-30",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 12,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.05,
+      "unit": "pure",
+      "period": "2019-12-30",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 13,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.05,
+      "unit": "pure",
+      "period": "2019-12-30",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 14,
+      "name": "us-gaap:DebtInstrumentBasisSpreadOnVariableRate1",
+      "value": 0.015,
+      "unit": "pure",
+      "period": "2020-01-01—2020-12-31",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 15,
+      "name": "us-gaap:DebtInstrumentBasisSpreadOnVariableRate1",
+      "value": 0.02,
+      "unit": "pure",
+      "period": "2020-01-01—2020-12-31",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 16,
+      "name": "us-gaap:DebtInstrumentBasisSpreadOnVariableRate1",
+      "value": 0.025,
+      "unit": "pure",
+      "period": "2020-01-01—2020-12-31",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 17,
+      "name": "us-gaap:DebtInstrumentBasisSpreadOnVariableRate1",
+      "value": 0.03,
+      "unit": "pure",
+      "period": "2020-01-01—2020-12-31",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 18,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0315,
+      "unit": "pure",
+      "period": "2020-12-31",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 19,
+      "name": "us-gaap:LineOfCreditFacilityUnusedCapacityCommitmentFeePercentage",
+      "value": 0.0025,
+      "unit": "pure",
+      "period": "2020-01-01—2020-12-31",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 20,
+      "name": "us-gaap:LineOfCreditFacilityUnusedCapacityCommitmentFeePercentage",
+      "value": 0.005,
+      "unit": "pure",
+      "period": "2020-01-01—2020-12-31",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 21,
+      "name": "us-gaap:SharebasedCompensationArrangementBySharebasedPaymentAwardAwardVestingRightsPercentage",
+      "value": 0.33,
+      "unit": "pure",
+      "period": "2020-01-01—2020-12-31",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 22,
+      "name": "us-gaap:LossContingencyDamagesSoughtValue",
+      "value": 30000000.0,
+      "unit": "USD",
+      "period": "2019-01-28",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 23,
+      "name": "us-gaap:DebtInstrumentBasisSpreadOnVariableRate1",
+      "value": 0.01,
+      "unit": "pure",
+      "period": "2020-01-01—2020-12-31",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 24,
+      "name": "us-gaap:DebtInstrumentBasisSpreadOnVariableRate1",
+      "value": 0.0,
+      "unit": "pure",
+      "period": "2020-01-01—2020-12-31",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 25,
+      "name": "us-gaap:DebtInstrumentBasisSpreadOnVariableRate1",
+      "value": 0.0,
+      "unit": "pure",
+      "period": "2020-01-01—2020-12-31",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 26,
+      "name": "us-gaap:ShareBasedCompensationArrangementByShareBasedPaymentAwardNumberOfSharesAuthorized",
+      "value": 18000000.0,
+      "unit": "shares",
+      "period": "2014-05-31",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 27,
+      "name": "us-gaap:CommonStockCapitalSharesReservedForFutureIssuance",
+      "value": 20000000.0,
+      "unit": "shares",
+      "period": "2014-05-31",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 28,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.07,
+      "unit": "pure",
+      "period": "2019-05-23",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 29,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.07,
+      "unit": "pure",
+      "period": "2019-05-23",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 30,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.07,
+      "unit": "pure",
+      "period": "2019-05-23",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 31,
+      "name": "us-gaap:DebtInstrumentBasisSpreadOnVariableRate1",
+      "value": 0.01,
+      "unit": "pure",
+      "period": "2020-01-01—2020-12-31",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 32,
+      "name": "us-gaap:DebtInstrumentBasisSpreadOnVariableRate1",
+      "value": 0.01,
+      "unit": "pure",
+      "period": "2020-01-01—2020-12-31",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 33,
+      "name": "us-gaap:DebtInstrumentBasisSpreadOnVariableRate1",
+      "value": 0.0,
+      "unit": "pure",
+      "period": "2020-01-01—2020-12-31",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 34,
+      "name": "us-gaap:DebtInstrumentFaceAmount",
+      "value": 2000000000.0,
+      "unit": "USD",
+      "period": "2015-03-27",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 35,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.05375,
+      "unit": "pure",
+      "period": "2015-03-27",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 36,
+      "name": "us-gaap:DebtInstrumentFaceAmount",
+      "value": 3250000000.0,
+      "unit": "USD",
+      "period": "2015-03-27",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 37,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.05875,
+      "unit": "pure",
+      "period": "2015-03-27",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 38,
+      "name": "us-gaap:DebtInstrumentFaceAmount",
+      "value": 1500000000.0,
+      "unit": "EUR",
+      "period": "2015-03-27",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 39,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.045,
+      "unit": "pure",
+      "period": "2015-03-27",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 40,
+      "name": "us-gaap:DebtInstrumentFaceAmount",
+      "value": 3250000000.0,
+      "unit": "USD",
+      "period": "2015-03-27",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 41,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.06125,
+      "unit": "pure",
+      "period": "2015-03-27",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 42,
+      "name": "us-gaap:DebtInstrumentFaceAmount",
+      "value": 1500000000.0,
+      "unit": "USD",
+      "period": "2018-03-26",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 43,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0925,
+      "unit": "pure",
+      "period": "2018-03-26",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 44,
+      "name": "us-gaap:DebtInstrumentFaceAmount",
+      "value": 1500000000.0,
+      "unit": "USD",
+      "period": "2018-03-26",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 45,
+      "name": "us-gaap:GainsLossesOnExtinguishmentOfDebt",
+      "value": -26000000.0,
+      "unit": "USD",
+      "period": "2018-03-26",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 46,
+      "name": "us-gaap:RestructuringCharges",
+      "value": 11000000.0,
+      "unit": "USD",
+      "period": "2020-01-01—2020-12-31",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 47,
+      "name": "us-gaap:DebtInstrumentFaceAmount",
+      "value": 750000000.0,
+      "unit": "USD",
+      "period": "2018-06-01",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 48,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.085,
+      "unit": "pure",
+      "period": "2018-06-01",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 49,
+      "name": "us-gaap:GoodwillImpairmentLoss",
+      "value": 1970000000.0,
+      "unit": "USD",
+      "period": "2018-01-01",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 50,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.05375,
+      "unit": "pure",
+      "period": "2015-03-27",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 51,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.05875,
+      "unit": "pure",
+      "period": "2015-03-27",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 52,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.045,
+      "unit": "pure",
+      "period": "2015-03-27",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 53,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.06125,
+      "unit": "pure",
+      "period": "2015-03-27",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 54,
+      "name": "us-gaap:DebtInstrumentFaceAmount",
+      "value": 1500000000.0,
+      "unit": "USD",
+      "period": "2017-12-18",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 55,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.09,
+      "unit": "pure",
+      "period": "2017-12-18",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 56,
+      "name": "us-gaap:DebtInstrumentFaceAmount",
+      "value": 1500000000.0,
+      "unit": "USD",
+      "period": "2017-12-18",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 57,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.09,
+      "unit": "pure",
+      "period": "2017-12-18",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 58,
+      "name": "us-gaap:GainsLossesOnExtinguishmentOfDebt",
+      "value": -43000000.0,
+      "unit": "USD",
+      "period": "2018-11-27",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 59,
+      "name": "us-gaap:DeferredFinanceCostsNet",
+      "value": 25000000.0,
+      "unit": "USD",
+      "period": "2018-11-27",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 60,
+      "name": "us-gaap:GoodwillImpairmentLoss",
+      "value": 0.0,
+      "unit": "USD",
+      "period": "2019-10-01",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 61,
+      "name": "us-gaap:GoodwillImpairmentLoss",
+      "value": 109000000.0,
+      "unit": "USD",
+      "period": "2018-10-01",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 62,
+      "name": "us-gaap:DebtInstrumentBasisSpreadOnVariableRate1",
+      "value": 0.02,
+      "unit": "pure",
+      "period": "2020-01-01—2020-12-31",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 63,
+      "name": "us-gaap:DebtInstrumentBasisSpreadOnVariableRate1",
+      "value": 0.0175,
+      "unit": "pure",
+      "period": "2020-01-01—2020-12-31",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 64,
+      "name": "us-gaap:DebtInstrumentBasisSpreadOnVariableRate1",
+      "value": 0.03,
+      "unit": "pure",
+      "period": "2020-01-01—2020-12-31",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 65,
+      "name": "us-gaap:DebtInstrumentBasisSpreadOnVariableRate1",
+      "value": 0.0275,
+      "unit": "pure",
+      "period": "2020-01-01—2020-12-31",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 66,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0315,
+      "unit": "pure",
+      "period": "2020-12-31",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 67,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.029,
+      "unit": "pure",
+      "period": "2020-12-31",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 68,
+      "name": "us-gaap:AntidilutiveSecuritiesExcludedFromComputationOfEarningsPerShareAmount",
+      "value": 3154000.0,
+      "unit": "shares",
+      "period": "2020-01-01—2020-12-31",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 69,
+      "name": "us-gaap:AntidilutiveSecuritiesExcludedFromComputationOfEarningsPerShareAmount",
+      "value": 5106000.0,
+      "unit": "shares",
+      "period": "2019-01-01—2019-12-31",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 70,
+      "name": "us-gaap:AntidilutiveSecuritiesExcludedFromComputationOfEarningsPerShareAmount",
+      "value": 3763000.0,
+      "unit": "shares",
+      "period": "2018-01-01—2018-12-31",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 71,
+      "name": "us-gaap:DerivativeNotionalAmount",
+      "value": 1250000000.0,
+      "unit": "USD",
+      "period": "2020-12-31",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 72,
+      "name": "us-gaap:DefinedContributionPlanCostRecognized",
+      "value": 43000000.0,
+      "unit": "USD",
+      "period": "2020-01-01—2020-12-31",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 73,
+      "name": "us-gaap:DefinedContributionPlanCostRecognized",
+      "value": 41000000.0,
+      "unit": "USD",
+      "period": "2019-01-01—2019-12-31",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 74,
+      "name": "us-gaap:DefinedContributionPlanCostRecognized",
+      "value": 36000000.0,
+      "unit": "USD",
+      "period": "2018-01-01—2018-12-31",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 75,
+      "name": "us-gaap:DebtInstrumentFaceAmount",
+      "value": 1250000000.0,
+      "unit": "USD",
+      "period": "2017-03-31",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 76,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.065,
+      "unit": "pure",
+      "period": "2017-03-31",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 77,
+      "name": "us-gaap:DebtInstrumentFaceAmount",
+      "value": 2000000000.0,
+      "unit": "USD",
+      "period": "2017-03-31",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 78,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.07,
+      "unit": "pure",
+      "period": "2017-03-31",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 79,
+      "name": "us-gaap:EmployeeServiceShareBasedCompensationNonvestedAwardsTotalCompensationCostNotYetRecognized",
+      "value": 55000000.0,
+      "unit": "USD",
+      "period": "2020-12-31",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 80,
+      "name": "us-gaap:ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsVestedInPeriodTotalFairValue",
+      "value": 66000000.0,
+      "unit": "USD",
+      "period": "2020-01-01—2020-12-31",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 81,
+      "name": "us-gaap:ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsVestedInPeriodTotalFairValue",
+      "value": 34000000.0,
+      "unit": "USD",
+      "period": "2019-01-01—2019-12-31",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 82,
+      "name": "us-gaap:ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsVestedInPeriodTotalFairValue",
+      "value": 30000000.0,
+      "unit": "USD",
+      "period": "2018-01-01—2018-12-31",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 83,
+      "name": "us-gaap:PaymentsToAcquireBusinessesGross",
+      "value": 180000000.0,
+      "unit": "USD",
+      "period": "2019-03-06",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 84,
+      "name": "us-gaap:DebtInstrumentFaceAmount",
+      "value": 1000000000.0,
+      "unit": "USD",
+      "period": "2017-10-17",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 85,
+      "name": "us-gaap:DebtInstrumentFaceAmount",
+      "value": 750000000.0,
+      "unit": "USD",
+      "period": "2017-11-21",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 86,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.055,
+      "unit": "pure",
+      "period": "2017-10-17",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 87,
+      "name": "us-gaap:AntidilutiveSecuritiesExcludedFromComputationOfEarningsPerShareAmount",
+      "value": 9551000.0,
+      "unit": "shares",
+      "period": "2020-01-01—2020-12-31",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 88,
+      "name": "us-gaap:AntidilutiveSecuritiesExcludedFromComputationOfEarningsPerShareAmount",
+      "value": 2598000.0,
+      "unit": "shares",
+      "period": "2019-01-01—2019-12-31",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 89,
+      "name": "us-gaap:AntidilutiveSecuritiesExcludedFromComputationOfEarningsPerShareAmount",
+      "value": 4185000.0,
+      "unit": "shares",
+      "period": "2018-01-01—2018-12-31",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 90,
+      "name": "us-gaap:DebtInstrumentBasisSpreadOnVariableRate1",
+      "value": 0.0,
+      "unit": "pure",
+      "period": "2020-01-01—2020-12-31",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 91,
+      "name": "us-gaap:AdvertisingExpense",
+      "value": 451000000.0,
+      "unit": "USD",
+      "period": "2020-01-01—2020-12-31",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 92,
+      "name": "us-gaap:AdvertisingExpense",
+      "value": 544000000.0,
+      "unit": "USD",
+      "period": "2019-01-01—2019-12-31",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 93,
+      "name": "us-gaap:AdvertisingExpense",
+      "value": 481000000.0,
+      "unit": "USD",
+      "period": "2018-01-01—2018-12-31",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 94,
+      "name": "us-gaap:DebtInstrumentFaceAmount",
+      "value": 1000000000.0,
+      "unit": "USD",
+      "period": "2020-03-31",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 95,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.085,
+      "unit": "pure",
+      "period": "2018-06-01",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 96,
+      "name": "us-gaap:EmployeeServiceShareBasedCompensationNonvestedAwardsTotalCompensationCostNotYetRecognized",
+      "value": 10000000.0,
+      "unit": "USD",
+      "period": "2020-12-31",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 97,
+      "name": "us-gaap:OperatingLeaseExpense",
+      "value": 92000000.0,
+      "unit": "USD",
+      "period": "2018-01-01—2018-12-31",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 98,
+      "name": "us-gaap:DerivativeNotionalAmount",
+      "value": 485000000.0,
+      "unit": "USD",
+      "period": "2020-12-31",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 99,
+      "name": "us-gaap:DebtInstrumentFairValue",
+      "value": 25378000000.0,
+      "unit": "USD",
+      "period": "2020-12-31",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 100,
+      "name": "us-gaap:DebtInstrumentFairValue",
+      "value": 27520000000.0,
+      "unit": "USD",
+      "period": "2019-12-31",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 101,
+      "name": "us-gaap:ShareBasedCompensationArrangementByShareBasedPaymentAwardNumberOfSharesAvailableForGrant",
+      "value": 16902000.0,
+      "unit": "shares",
+      "period": "2020-12-31",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 102,
+      "name": "us-gaap:LongTermDebt",
+      "value": 0.0,
+      "unit": "USD",
+      "period": "2020-12-31",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 103,
+      "name": "us-gaap:LongTermDebt",
+      "value": 104000000.0,
+      "unit": "USD",
+      "period": "2020-12-31",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 104,
+      "name": "us-gaap:LineOfCreditFacilityRemainingBorrowingCapacity",
+      "value": 1121000000.0,
+      "unit": "USD",
+      "period": "2020-12-31",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 105,
+      "name": "us-gaap:ConcentrationRiskPercentage1",
+      "value": 0.41,
+      "unit": "pure",
+      "period": "2020-01-01—2020-12-31",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 106,
+      "name": "us-gaap:ConcentrationRiskPercentage1",
+      "value": 0.39,
+      "unit": "pure",
+      "period": "2019-01-01—2019-12-31",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 107,
+      "name": "us-gaap:ConcentrationRiskPercentage1",
+      "value": 0.36,
+      "unit": "pure",
+      "period": "2018-01-01—2018-12-31",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 108,
+      "name": "dei:EntityPublicFloat",
+      "value": 5664997951.0,
+      "unit": "USD",
+      "period": "2020-06-30",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 109,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.05,
+      "unit": "pure",
+      "period": "2020-12-03",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 110,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.05375,
+      "unit": "pure",
+      "period": "2015-03-27",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 111,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.05875,
+      "unit": "pure",
+      "period": "2015-03-27",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 112,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.045,
+      "unit": "pure",
+      "period": "2015-03-27",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 113,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.06125,
+      "unit": "pure",
+      "period": "2015-03-27",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 114,
+      "name": "us-gaap:DebtWeightedAverageInterestRate",
+      "value": 0.0602,
+      "unit": "pure",
+      "period": "2020-12-31",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 115,
+      "name": "us-gaap:DebtWeightedAverageInterestRate",
+      "value": 0.0621,
+      "unit": "pure",
+      "period": "2019-12-31",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 116,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.05,
+      "unit": "pure",
+      "period": "2019-12-30",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 117,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0525,
+      "unit": "pure",
+      "period": "2019-12-30",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 118,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.05,
+      "unit": "pure",
+      "period": "2020-12-03",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 119,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0525,
+      "unit": "pure",
+      "period": "2020-12-03",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 120,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.07,
+      "unit": "pure",
+      "period": "2019-05-23",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 121,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.0725,
+      "unit": "pure",
+      "period": "2019-05-23",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 122,
+      "name": "us-gaap:DebtInstrumentInterestRateStatedPercentage",
+      "value": 0.085,
+      "unit": "pure",
+      "period": "2018-06-01",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 123,
+      "name": "us-gaap:Depreciation",
+      "value": 180000000.0,
+      "unit": "USD",
+      "period": "2020-01-01—2020-12-31",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 124,
+      "name": "us-gaap:Depreciation",
+      "value": 178000000.0,
+      "unit": "USD",
+      "period": "2019-01-01—2019-12-31",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 125,
+      "name": "us-gaap:Depreciation",
+      "value": 175000000.0,
+      "unit": "USD",
+      "period": "2018-01-01—2018-12-31",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    },
+    {
+      "id": 126,
+      "name": "dei:EntityCommonStockSharesOutstanding",
+      "value": 355619826.0,
+      "unit": "shares",
+      "period": "2021-02-18",
+      "scope": "Bausch Health Companies Inc.",
+      "source_span": null
+    }
+  ]
+}

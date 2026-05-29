@@ -22,12 +22,54 @@ def main(example_dir: str) -> None:
     p = Path(example_dir)
     if not p.is_absolute():
         p = ROOT / p
-    document = (p / "document.txt").read_text()
+    document = (p / "document.txt").read_text(encoding="utf-8", errors="replace")
     ground_truth = GroundTruth.model_validate_json(
-        (p / "ground_truth.json").read_text()
+        (p / "ground_truth.json").read_text(encoding="utf-8")
     )
 
+    # Clear prior debug events buffer if debugging is enabled, then run extraction.
+    if __import__("os").environ.get("RED_DEBUG"):
+        try:
+            from red.base import _RED_DEBUG_EVENTS  # type: ignore
+            _RED_DEBUG_EVENTS.clear()
+        except Exception:
+            pass
+
     extraction = red_agent.extract(document, ground_truth)
+    # If debug enabled, collect and print a human-friendly summary of red's
+    # debug events (what changed, which technique).
+    if __import__("os").environ.get("RED_DEBUG"):
+        try:
+            from red.base import _RED_DEBUG_EVENTS  # type: ignore
+
+            # Count techniques
+            counts: dict[str, int] = {}
+            changes: list[str] = []
+            for ev in _RED_DEBUG_EVENTS:
+                tech = ev.get("technique", "unknown")
+                counts[tech] = counts.get(tech, 0) + 1
+                if ev.get("type") == "field_change":
+                    kpi = ev.get("kpi")
+                    field = ev.get("field")
+                    old = ev.get("old")
+                    new = ev.get("new")
+                    changes.append(f"{kpi}: {field} {old} → {new} ({tech})")
+                elif ev.get("type") == "kpi_new":
+                    kp = ev.get("kpi_new")
+                    name = kp.get("name") if isinstance(kp, dict) else str(kp)
+                    changes.append(f"NEW {name}: {kp} ({tech})")
+
+            print("\nRED DEBUG SUMMARY:")
+            print("Technique counts:")
+            for t, c in counts.items():
+                print(f" - {t}: {c}")
+            if changes:
+                print("\nChanges:")
+                for line in changes:
+                    print(" - ", line)
+
+        except Exception:
+            pass
     judgment = blue_agent.judge(document, extraction.public_view())
     result = score_match(extraction, judgment, ground_truth)
 
