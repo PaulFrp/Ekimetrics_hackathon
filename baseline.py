@@ -86,9 +86,9 @@ class BaselineRedAgent(RedAgent):
         ground_truth: GroundTruth,
     ) -> None:
         options = [
-            self.swap_two_digits,
-            lambda k: self.perturb_value(k, 1.01),
-            lambda k: self.shift_validation_key(k, ground_truth),
+            self.swap_two_first_nonzero_digits,
+            lambda k: self.perturb_value_gaussian(k, 1.01),
+            lambda k: self.shift_period(k, ground_truth),
         ]
         self._rng.shuffle(options)
         for fn in options:
@@ -110,52 +110,141 @@ class BaselineRedAgent(RedAgent):
         )
 
     @staticmethod
-    def swap_two_digits(kpi: KPI) -> KPI | None:
-        """Swap two adjacent digits in the numeric value (e.g. 14876 → 14867)."""
-        if not isinstance(kpi.value, (int, float)) or kpi.value == 0:
-            return None
-        chars = list(repr(kpi.value))
-        for i in range(len(chars) - 1, 0, -1):
-            if (
-                chars[i].isdigit()
-                and chars[i - 1].isdigit()
-                and chars[i] != chars[i - 1]
-            ):
-                chars[i], chars[i - 1] = chars[i - 1], chars[i]
-                try:
-                    new_val = float("".join(chars))
-                except ValueError:
-                    return None
-                if new_val != kpi.value:
-                    return kpi.model_copy(update={"value": new_val})
-                return None
-        return None
+    def swap_two_first_nonzero_digits(kpi):
+        """
+        Échange les deux premiers chiffres non nuls dans la valeur KPI.
+        Ex: 10450 -> 01450 (puis normalisé) -> 14050 selon structure numérique.
+        """
 
-    @staticmethod
-    def perturb_value(kpi: KPI, factor: float = 1.01) -> KPI | None:
-        """Multiply the numeric value by `factor` (default +1%)."""
         if not isinstance(kpi.value, (int, float)):
             return None
-        new_val = kpi.value * factor
-        if new_val == kpi.value:
+
+        s = str(int(kpi.value))  # on travaille en représentation entière
+
+        digits = list(s)
+
+        # trouver les deux premiers chiffres non zéro
+        first = -1
+        second = -1
+
+        for i in range(len(digits)):
+            if digits[i] != '0':
+                if first == -1:
+                    first = i
+                elif second == -1:
+                    second = i
+                    break
+
+        # pas assez de chiffres significatifs
+        if first == -1 or second == -1:
             return None
+
+        # swap
+        digits[first], digits[second] = digits[second], digits[first]
+
+        new_val = int("".join(digits))
+
+        if new_val == int(kpi.value):
+            return None
+
+        return kpi.model_copy(update={"value": float(new_val)})
+
+    @staticmethod
+    def perturb_value_gaussian(kpi, rng, n_gt):
+        """
+        Perturbe une valeur KPI avec bruit gaussien.
+        Contrainte :
+        - variation au minimum par pas de 1000
+        - arrondi au millier
+        - bruit dépendant de la taille du dataset
+        """
+
+        if not isinstance(kpi.value, (int, float)):
+            return None
+
+        base = float(kpi.value)
+
+        sigma = 1.0 / max(n_gt, 1)
+        noise = rng.gauss(0, sigma)
+
+        new_val = base * (1 + noise)
+
+        new_val = round(new_val / 1000.0) * 1000.0
+
+        if new_val == base:
+            new_val = base + (1000.0 if rng.random() < 0.5 else -1000.0)
+
+        if isinstance(kpi.value, int):
+            new_val = int(new_val)
+
         return kpi.model_copy(update={"value": new_val})
 
     @staticmethod
-    def shift_validation_key(kpi: KPI, ground_truth: GroundTruth) -> KPI | None:
-        """Shift the period to a nearby year that doesn't exist in GT."""
+    def shift_period(kpi, rng):
+        """
+        Shift de période KPI sans dépendance externe.
+        """
+
         if not kpi.period:
             return None
-        try:
-            year = int(kpi.period)
-        except (ValueError, TypeError):
+
+        p = kpi.period.strip()
+
+        # bloc interdit strict
+        if p == "2019-01-01—2019-12-31":
             return None
-        gt_keys = {(k.name, k.period, k.scope) for k in ground_truth.kpis}
-        for delta in (-1, 1, -2, 2):
-            new_period = str(year + delta)
-            if (kpi.name, new_period, kpi.scope) not in gt_keys:
-                return kpi.model_copy(update={"period": new_period})
-        return None
+
+        # format YYYY-MM-DD
+        if len(p) == 10 and p[4] == "-" and p[7] == "-":
+            try:
+                year = int(p[0:4])
+                month = int(p[5:7])
+                day = int(p[8:10])
+            except:
+                return None
+
+            delta = 1 if rng.random() < 0.5 else -1
+            month += delta
+
+            if month < 1:
+                month = 12
+                year -= 1
+            elif month > 12:
+                month = 1
+                year += 1
+
+            new_period = str(year).zfill(4) + "-" + str(month).zfill(2) + "-" + str(day).zfill(2)
+            return kpi.model_copy(update={"period": new_period})
+
+        # format YYYY-MM
+        if len(p) == 7 and p[4] == "-":
+            try:
+                year = int(p[0:4])
+                month = int(p[5:7])
+            except:
+                return None
+
+            delta = 1 if rng.random() < 0.5 else -1
+            month += delta
+
+            if month < 1:
+                month = 12
+                year -= 1
+            elif month > 12:
+                month = 1
+                year += 1
+
+            new_period = str(year).zfill(4) + "-" + str(month).zfill(2)
+            return kpi.model_copy(update={"period": new_period})
+
+        # fallback année seule
+        try:
+            year = int(p)
+            delta = 1 if rng.random() < 0.5 else -1
+            return kpi.model_copy(update={"period": str(year + delta)})
+        except:
+            return None
+            return None
 
     @staticmethod
     def fabricate_with_existing_value(
