@@ -10,8 +10,8 @@ load_dotenv()
 
 
 #config the paths
-ORIGINAL_PATH = "kpi-hackathon-jarvis/examples/finance_short/example_01/ground_truth.json"
-BIASED_PATH = "data/biased.json"
+ORIGINAL_PATH = "Ekimetrics_hackathon/data/avant_ground_truth.json"
+BIASED_PATH = "Ekimetrics_hackathon/data/apres_red_extraction.json"
 
 
 SYSTEM_PROMPT = (

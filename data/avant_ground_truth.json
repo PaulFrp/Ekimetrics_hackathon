@@ -1,0 +1,10 @@
+{
+  "kpis": [
+    {"id": 0, "name": "Revenue", "value": 3.8, "unit": "B€", "period": "2023", "scope": "Group"},
+    {"id": 1, "name": "Revenue", "value": 3.5, "unit": "B€", "period": "2022", "scope": "Group"},
+    {"id": 2, "name": "EBITDA", "value": 450, "unit": "M€", "period": "2023", "scope": "Group"},
+    {"id": 3, "name": "Revenue", "value": 1.4, "unit": "B€", "period": "2023", "scope": "Europe"},
+    {"id": 4, "name": "Revenue", "value": 1.3, "unit": "B€", "period": "2022", "scope": "Europe"},
+    {"id": 5, "name": "Employees", "value": 12500, "unit": null, "period": "2023", "scope": "Group"}
+  ]
+}
