@@ -7,7 +7,7 @@ Two baselines are provided as examples (both in `baseline.py`):
 Swap which line is active to switch, or write your own agent in this folder.
 """
 # from .baseline import BaselineRedAgent
-from .baseline import LLMRedAgent
+from .baseline import BaselineRedAgent, LLMRedAgent
 
 # agent = BaselineRedAgent()
-agent = LLMRedAgent()
+agent = BaselineRedAgent()

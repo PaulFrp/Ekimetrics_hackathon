@@ -18,6 +18,7 @@ import random
 from pathlib import Path
 
 from shared.metering import record_llm_usage
+from shared.scoring import classify_kpi
 from shared.types import GroundTruth, KPI, RedExtraction
 
 from .base import RedAgent
@@ -88,9 +89,9 @@ class BaselineRedAgent(RedAgent):
         ground_truth: GroundTruth,
     ) -> None:
         options = [
-            ("swap_two_digits", self.swap_two_digits),
-            ("perturb_value", lambda k: self.perturb_value(k, 1.01)),
-            ("shift_validation_key", lambda k: self.shift_validation_key(k, ground_truth)),
+            ("swap_two_digits", self.swap_two_first_nonzero_digits),
+            ("perturb_value", lambda k: self.perturb_value_gaussian(k, 1.01, len(kpis))),
+            ("shift_validation_key", lambda k: self.shift_period(k, ground_truth)),
         ]
         self._rng.shuffle(options)
         for name, fn in options:
@@ -119,52 +120,123 @@ class BaselineRedAgent(RedAgent):
         )
 
     @staticmethod
-    def swap_two_digits(kpi: KPI) -> KPI | None:
-        """Swap two adjacent digits in the numeric value (e.g. 14876 → 14867)."""
-        if not isinstance(kpi.value, (int, float)) or kpi.value == 0:
-            return None
-        chars = list(repr(kpi.value))
-        for i in range(len(chars) - 1, 0, -1):
-            if (
-                chars[i].isdigit()
-                and chars[i - 1].isdigit()
-                and chars[i] != chars[i - 1]
-            ):
-                chars[i], chars[i - 1] = chars[i - 1], chars[i]
-                try:
-                    new_val = float("".join(chars))
-                except ValueError:
-                    return None
-                if new_val != kpi.value:
-                    return kpi.model_copy(update={"value": new_val})
-                return None
-        return None
-
-    @staticmethod
-    def perturb_value(kpi: KPI, factor: float = 1.01) -> KPI | None:
-        """Multiply the numeric value by `factor` (default +1%)."""
+    def swap_two_first_nonzero_digits(kpi: KPI) -> KPI | None:
+        """Swap the first two non-zero digits in an integer-like KPI value."""
         if not isinstance(kpi.value, (int, float)):
             return None
-        new_val = kpi.value * factor
-        if new_val == kpi.value:
+
+        try:
+            s = str(int(kpi.value))
+        except Exception:
             return None
+
+        digits = list(s)
+        first = -1
+        second = -1
+        for i, ch in enumerate(digits):
+            if ch != "0":
+                if first == -1:
+                    first = i
+                elif second == -1:
+                    second = i
+                    break
+
+        if first == -1 or second == -1:
+            return None
+
+        digits[first], digits[second] = digits[second], digits[first]
+        try:
+            new_val = int("".join(digits))
+        except Exception:
+            return None
+
+        if new_val == int(kpi.value):
+            return None
+
+        return kpi.model_copy(update={"value": float(new_val)})
+
+    @staticmethod
+    def perturb_value_gaussian(kpi: KPI, rng: random.Random, n_gt: int) -> KPI | None:
+        """Perturb a KPI numeric value with Gaussian noise and round to thousands."""
+        if not isinstance(kpi.value, (int, float)):
+            return None
+
+        base = float(kpi.value)
+        sigma = 1.0 / max(n_gt, 1)
+        noise = rng.gauss(0, sigma)
+
+        new_val = base * (1 + noise)
+        new_val = round(new_val / 1000.0) * 1000.0
+
+        if new_val == base:
+            new_val = base + (1000.0 if rng.random() < 0.5 else -1000.0)
+
+        if isinstance(kpi.value, int):
+            new_val = int(new_val)
+
         return kpi.model_copy(update={"value": new_val})
 
     @staticmethod
-    def shift_validation_key(kpi: KPI, ground_truth: GroundTruth) -> KPI | None:
-        """Shift the period to a nearby year that doesn't exist in GT."""
+    def shift_period(kpi: KPI, rng: random.Random) -> KPI | None:
+        """Shift a KPI period string by one month or one year depending on format."""
         if not kpi.period:
             return None
-        try:
-            year = int(kpi.period)
-        except (ValueError, TypeError):
+
+        p = kpi.period.strip()
+
+        if p == "2019-01-01—2019-12-31":
             return None
-        gt_keys = {(k.name, k.period, k.scope) for k in ground_truth.kpis}
-        for delta in (-1, 1, -2, 2):
-            new_period = str(year + delta)
-            if (kpi.name, new_period, kpi.scope) not in gt_keys:
-                return kpi.model_copy(update={"period": new_period})
-        return None
+
+        if len(p) == 10 and p[4] == "-" and p[7] == "-":
+            try:
+                year = int(p[0:4])
+                month = int(p[5:7])
+                day = int(p[8:10])
+            except Exception:
+                return None
+
+            delta = 1 if rng.random() < 0.5 else -1
+            month += delta
+
+            if month < 1:
+                month = 12
+                year -= 1
+            elif month > 12:
+                month = 1
+                year += 1
+
+            new_period = f"{year:04d}-{month:02d}-{day:02d}"
+            return kpi.model_copy(update={"period": new_period})
+
+        if len(p) == 7 and p[4] == "-":
+            try:
+                year = int(p[0:4])
+                month = int(p[5:7])
+            except Exception:
+                return None
+
+            delta = 1 if rng.random() < 0.5 else -1
+            month += delta
+
+            if month < 1:
+                month = 12
+                year -= 1
+            elif month > 12:
+                month = 1
+                year += 1
+
+            new_period = f"{year:04d}-{month:02d}"
+            return kpi.model_copy(update={"period": new_period})
+
+        try:
+            year = int(p)
+            delta = 1 if rng.random() < 0.5 else -1
+            return kpi.model_copy(update={"period": str(year + delta)})
+        except Exception:
+            return None
+    
+
+    
 
     @staticmethod
     def fabricate_with_existing_value(
@@ -222,7 +294,7 @@ class LLMRedAgent(RedAgent):
 
     _KEEP_FRACTION = 0.70   # share of GT copied verbatim → comfortably >=50% coverage
     _MAX_HALLUC = 12        # upper bound on LLM-invented hallucinations (keeps output tiny)
-    _SEED_SAMPLE = 15       # real KPIs shown to the LLM to seed plausible fakes
+    _SEED_SAMPLE = 40       # real KPIs shown to the LLM to seed plausible fakes
 
     # Strict schema for the SMALL hallucination batch only (no id — code assigns
     # ids when assembling the final extraction). value is number-or-string;
@@ -250,11 +322,9 @@ class LLMRedAgent(RedAgent):
         },
     }
 
-    # Extended agent prompt for financial red-team behaviour. This mirrors the
-    # developer guidance and gives the LLM a concrete operational checklist.
-    _INSTRUCTIONS = """You are a financial KPI red-team agent.
+    _FINANCE_LONG_INSTRUCTIONS = """You are a financial KPI red-team agent for the finance_long round.
 
-Given a KPI JSON, create a modified version containing subtle, realistic hallucinations.
+Given a KPI JSON from a long-form financial filing, create a modified version containing subtle, realistic hallucinations.
 
 Rules:
 - Modify at most 25% of KPI entries.
@@ -264,11 +334,11 @@ Rules:
 - No explanations.
 
 Allowed modifications:
-- Swap scopes using existing scopes from the dataset.
-- Swap periods using existing periods from the dataset.
+- Swap scopes using existing scopes from the long dataset.
+- Swap periods using existing periods from the long dataset.
 - Change units (e.g. M€ <-> B€) and convert values accordingly.
-- Replace KPI names with realistic business synonyms.
-- Slightly perturb values (<10% preferred).
+- Replace KPI names with realistic GAAP/business synonyms.
+- Slightly perturb values (<1%).
 - Modify ratios, margins, growth rates, or derived KPIs while keeping them plausible.
 - Change KPI types/classes when realistic.
 - Reuse existing values, periods, scopes, and labels whenever possible.
@@ -295,8 +365,11 @@ Operational notes:
 - Output must be strictly valid JSON conforming to the `_SCHEMA` provided to the model.
 - Do not include commentary or explanation — return raw JSON only.
 
-Use the above as your instructions when inventing hallucinations for the small batch of KPIs provided.
+Use the above as your instructions when inventing hallucinations for the long-form KPI batch provided.
 """
+
+    # Runtime prompt used by the active LLM agent.
+    _INSTRUCTIONS = _FINANCE_LONG_INSTRUCTIONS
 
     def __init__(self, model: str = _DEFAULT_MODEL, seed: int | None = None) -> None:
         from openai import OpenAI  # local import so the rule-based baseline stays dep-free
@@ -328,7 +401,7 @@ Use the above as your instructions when inventing hallucinations for the small b
         n_keep = max(1, min(n, math.ceil(self._KEEP_FRACTION * n)))
         kept = self._rng.sample(gt, n_keep)
 
-        # LLM layer: a small, bounded batch of hallucinations (<=25% of GT).
+        # LLM layer: a bounded batch of hallucinations (<=25% of GT).
         n_halluc = max(1, min(self._MAX_HALLUC, n // 4))
         fakes = self._invent_hallucinations(gt, n_halluc)[:n_halluc]
 
@@ -361,6 +434,122 @@ Use the above as your instructions when inventing hallucinations for the small b
             pass
 
         return RedExtraction(kpis=kpis)
+
+    @staticmethod
+    def swap_two_first_nonzero_digits(kpi: KPI) -> KPI | None:
+        """Swap the first two non-zero digits in an integer-like KPI value."""
+        if not isinstance(kpi.value, (int, float)):
+            return None
+
+        try:
+            s = str(int(kpi.value))
+        except Exception:
+            return None
+
+        digits = list(s)
+        first = -1
+        second = -1
+        for i, ch in enumerate(digits):
+            if ch != "0":
+                if first == -1:
+                    first = i
+                elif second == -1:
+                    second = i
+                    break
+
+        if first == -1 or second == -1:
+            return None
+
+        digits[first], digits[second] = digits[second], digits[first]
+        try:
+            new_val = int("".join(digits))
+        except Exception:
+            return None
+
+        if new_val == int(kpi.value):
+            return None
+
+        return kpi.model_copy(update={"value": float(new_val)})
+
+    @staticmethod
+    def perturb_value_gaussian(kpi: KPI, rng: random.Random, n_gt: int) -> KPI | None:
+        """Perturb a KPI numeric value with Gaussian noise and round to thousands."""
+        if not isinstance(kpi.value, (int, float)):
+            return None
+
+        base = float(kpi.value)
+        sigma = 1.0 / max(n_gt, 1)
+        noise = rng.gauss(0, sigma)
+
+        new_val = base * (1 + noise)
+        new_val = round(new_val / 1000.0) * 1000.0
+
+        if new_val == base:
+            new_val = base + (1000.0 if rng.random() < 0.5 else -1000.0)
+
+        if isinstance(kpi.value, int):
+            new_val = int(new_val)
+
+        return kpi.model_copy(update={"value": new_val})
+
+    @staticmethod
+    def shift_period(kpi: KPI, rng: random.Random) -> KPI | None:
+        """Shift a KPI period string by one month or one year depending on format."""
+        if not kpi.period:
+            return None
+
+        p = kpi.period.strip()
+
+        if p == "2019-01-01—2019-12-31":
+            return None
+
+        if len(p) == 10 and p[4] == "-" and p[7] == "-":
+            try:
+                year = int(p[0:4])
+                month = int(p[5:7])
+                day = int(p[8:10])
+            except Exception:
+                return None
+
+            delta = 1 if rng.random() < 0.5 else -1
+            month += delta
+
+            if month < 1:
+                month = 12
+                year -= 1
+            elif month > 12:
+                month = 1
+                year += 1
+
+            new_period = f"{year:04d}-{month:02d}-{day:02d}"
+            return kpi.model_copy(update={"period": new_period})
+
+        if len(p) == 7 and p[4] == "-":
+            try:
+                year = int(p[0:4])
+                month = int(p[5:7])
+            except Exception:
+                return None
+
+            delta = 1 if rng.random() < 0.5 else -1
+            month += delta
+
+            if month < 1:
+                month = 12
+                year -= 1
+            elif month > 12:
+                month = 1
+                year += 1
+
+            new_period = f"{year:04d}-{month:02d}"
+            return kpi.model_copy(update={"period": new_period})
+
+        try:
+            year = int(p)
+            delta = 1 if rng.random() < 0.5 else -1
+            return kpi.model_copy(update={"period": str(year + delta)})
+        except Exception:
+            return None
 
     def _invent_hallucinations(self, gt: list[KPI], n: int) -> list[KPI]:
         seed = self._rng.sample(gt, min(self._SEED_SAMPLE, len(gt)))
@@ -489,6 +678,30 @@ Use the above as your instructions when inventing hallucinations for the small b
                     changed += 1
                 except Exception:
                     pass
+
+        # Extra long-round tactics: always try the new helper methods on a few
+        # candidate KPIs so their techniques are visible in the summary.
+        if ground_truth is not None:
+            candidates = [kp for kp in kpis if isinstance(kp.value, (int, float))]
+            for idx, kp in enumerate(candidates[: min(3, len(candidates))]):
+                if idx == 0:
+                    mod = self.swap_two_first_nonzero_digits(kp)
+                    if mod is not None:
+                        self._debug_field_change("swap_two_first_nonzero_digits", kp, "value", kp.value, mod.value)
+                        kp.value = mod.value
+                        changed += 1
+                elif idx == 1:
+                    mod = self.perturb_value_gaussian(kp, self._rng, len(kpis))
+                    if mod is not None:
+                        self._debug_field_change("perturb_value_gaussian", kp, "value", kp.value, mod.value)
+                        kp.value = mod.value
+                        changed += 1
+                else:
+                    mod = self.shift_period(kp, self._rng)
+                    if mod is not None:
+                        self._debug_field_change("shift_period", kp, "period", kp.period, mod.period)
+                        kp.period = mod.period
+                        changed += 1
 
         return kpis
 
