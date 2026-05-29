@@ -1,0 +1,148 @@
+{
+  "kpis": [
+    {
+      "id": 0,
+      "name": "earnings",
+      "value": 372900000.0,
+      "unit": "USD",
+      "period": "2019-12-29—2020-03-28",
+      "scope": "SCOTTS MIRACLE-GRO CO",
+      "source_span": null
+    },
+    {
+      "id": 1,
+      "name": "earnings",
+      "value": 320000000.0,
+      "unit": "USD",
+      "period": "2018-12-30—2019-03-30",
+      "scope": "SCOTTS MIRACLE-GRO CO",
+      "source_span": null
+    },
+    {
+      "id": 2,
+      "name": "earnings",
+      "value": 331500000.0,
+      "unit": "USD",
+      "period": "2019-10-01—2020-03-28",
+      "scope": "SCOTTS MIRACLE-GRO CO",
+      "source_span": null
+    },
+    {
+      "id": 3,
+      "name": "earnings",
+      "value": 277000000.0,
+      "unit": "USD",
+      "period": "2018-10-01—2019-03-30",
+      "scope": "SCOTTS MIRACLE-GRO CO",
+      "source_span": null
+    },
+    {
+      "id": 4,
+      "name": "earnings",
+      "value": 25500000.0,
+      "unit": "USD",
+      "period": "2019-12-29—2020-03-28",
+      "scope": "SCOTTS MIRACLE-GRO CO",
+      "source_span": null
+    },
+    {
+      "id": 5,
+      "name": "earnings",
+      "value": 10300000.0,
+      "unit": "USD",
+      "period": "2018-12-30—2019-03-30",
+      "scope": "SCOTTS MIRACLE-GRO CO",
+      "source_span": null
+    },
+    {
+      "id": 6,
+      "name": "earnings",
+      "value": 39400000.0,
+      "unit": "USD",
+      "period": "2019-10-01—2020-03-28",
+      "scope": "SCOTTS MIRACLE-GRO CO",
+      "source_span": null
+    },
+    {
+      "id": 7,
+      "name": "earnings",
+      "value": 14700000.0,
+      "unit": "USD",
+      "period": "2018-10-01—2019-03-30",
+      "scope": "SCOTTS MIRACLE-GRO CO",
+      "source_span": null
+    },
+    {
+      "id": 8,
+      "name": "earnings",
+      "value": 4000000.0,
+      "unit": "USD",
+      "period": "2019-12-29—2020-03-28",
+      "scope": "SCOTTS MIRACLE-GRO CO",
+      "source_span": null
+    },
+    {
+      "id": 9,
+      "name": "earnings",
+      "value": 3800000.0,
+      "unit": "USD",
+      "period": "2018-12-30—2019-03-30",
+      "scope": "SCOTTS MIRACLE-GRO CO",
+      "source_span": null
+    },
+    {
+      "id": 10,
+      "name": "earnings",
+      "value": 400000.0,
+      "unit": "USD",
+      "period": "2019-10-01—2020-03-28",
+      "scope": "SCOTTS MIRACLE-GRO CO",
+      "source_span": null
+    },
+    {
+      "id": 11,
+      "name": "earnings",
+      "value": -200000.0,
+      "unit": "USD",
+      "period": "2018-10-01—2019-03-30",
+      "scope": "SCOTTS MIRACLE-GRO CO",
+      "source_span": null
+    },
+    {
+      "id": 12,
+      "name": "earnings",
+      "value": -36900000.0,
+      "unit": "USD",
+      "period": "2019-12-29—2020-03-28",
+      "scope": "SCOTTS MIRACLE-GRO CO",
+      "source_span": null
+    },
+    {
+      "id": 13,
+      "name": "earnings",
+      "value": -34300000.0,
+      "unit": "USD",
+      "period": "2018-12-30—2019-03-30",
+      "scope": "SCOTTS MIRACLE-GRO CO",
+      "source_span": null
+    },
+    {
+      "id": 14,
+      "name": "earnings",
+      "value": -63000000.0,
+      "unit": "USD",
+      "period": "2019-10-01—2020-03-28",
+      "scope": "SCOTTS MIRACLE-GRO CO",
+      "source_span": null
+    },
+    {
+      "id": 15,
+      "name": "earnings",
+      "value": -62100000.0,
+      "unit": "USD",
+      "period": "2018-10-01—2019-03-30",
+      "scope": "SCOTTS MIRACLE-GRO CO",
+      "source_span": null
+    }
+  ]
+}

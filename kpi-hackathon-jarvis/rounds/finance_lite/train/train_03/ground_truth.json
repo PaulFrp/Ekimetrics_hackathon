@@ -1,0 +1,121 @@
+{
+  "kpis": [
+    {
+      "id": 0,
+      "name": "earnings",
+      "value": -31995000.0,
+      "unit": "USD",
+      "period": "2020-01-01—2020-12-31",
+      "scope": "VONAGE HOLDINGS CORP",
+      "source_span": null
+    },
+    {
+      "id": 1,
+      "name": "earnings",
+      "value": -26108000.0,
+      "unit": "USD",
+      "period": "2019-01-01—2019-12-31",
+      "scope": "VONAGE HOLDINGS CORP",
+      "source_span": null
+    },
+    {
+      "id": 2,
+      "name": "earnings",
+      "value": -36212000.0,
+      "unit": "USD",
+      "period": "2020-01-01—2020-12-31",
+      "scope": "VONAGE HOLDINGS CORP",
+      "source_span": null
+    },
+    {
+      "id": 3,
+      "name": "earnings",
+      "value": -19482000.0,
+      "unit": "USD",
+      "period": "2019-01-01—2019-12-31",
+      "scope": "VONAGE HOLDINGS CORP",
+      "source_span": null
+    },
+    {
+      "id": 4,
+      "name": "revenues",
+      "value": 612551000.0,
+      "unit": "USD",
+      "period": "2020-01-01—2020-12-31",
+      "scope": "VONAGE HOLDINGS CORP",
+      "source_span": null
+    },
+    {
+      "id": 5,
+      "name": "revenues",
+      "value": 447012000.0,
+      "unit": "USD",
+      "period": "2020-01-01—2020-12-31",
+      "scope": "VONAGE HOLDINGS CORP",
+      "source_span": null
+    },
+    {
+      "id": 6,
+      "name": "revenues",
+      "value": 188371000.0,
+      "unit": "USD",
+      "period": "2020-01-01—2020-12-31",
+      "scope": "VONAGE HOLDINGS CORP",
+      "source_span": null
+    },
+    {
+      "id": 7,
+      "name": "revenues",
+      "value": 637980000.0,
+      "unit": "USD",
+      "period": "2019-01-01—2019-12-31",
+      "scope": "VONAGE HOLDINGS CORP",
+      "source_span": null
+    },
+    {
+      "id": 8,
+      "name": "revenues",
+      "value": 338697000.0,
+      "unit": "USD",
+      "period": "2019-01-01—2019-12-31",
+      "scope": "VONAGE HOLDINGS CORP",
+      "source_span": null
+    },
+    {
+      "id": 9,
+      "name": "revenues",
+      "value": 212669000.0,
+      "unit": "USD",
+      "period": "2019-01-01—2019-12-31",
+      "scope": "VONAGE HOLDINGS CORP",
+      "source_span": null
+    },
+    {
+      "id": 10,
+      "name": "revenues",
+      "value": 607823000.0,
+      "unit": "USD",
+      "period": "2018-01-01—2018-12-31",
+      "scope": "VONAGE HOLDINGS CORP",
+      "source_span": null
+    },
+    {
+      "id": 11,
+      "name": "revenues",
+      "value": 247256000.0,
+      "unit": "USD",
+      "period": "2018-01-01—2018-12-31",
+      "scope": "VONAGE HOLDINGS CORP",
+      "source_span": null
+    },
+    {
+      "id": 12,
+      "name": "revenues",
+      "value": 193703000.0,
+      "unit": "USD",
+      "period": "2018-01-01—2018-12-31",
+      "scope": "VONAGE HOLDINGS CORP",
+      "source_span": null
+    }
+  ]
+}

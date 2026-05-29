@@ -1,0 +1,112 @@
+{
+  "kpis": [
+    {
+      "id": 0,
+      "name": "revenues",
+      "value": 1371197.0,
+      "unit": "CAD",
+      "period": "2022-03-12—2022-05-31",
+      "scope": "Salona Global Medical Device Corp",
+      "source_span": null
+    },
+    {
+      "id": 1,
+      "name": "earnings",
+      "value": 96629.0,
+      "unit": "CAD",
+      "period": "2022-03-12—2022-05-31",
+      "scope": "Salona Global Medical Device Corp",
+      "source_span": null
+    },
+    {
+      "id": 2,
+      "name": "revenues",
+      "value": 1436750.0,
+      "unit": "CAD",
+      "period": "2022-03-01—2022-03-11",
+      "scope": "Salona Global Medical Device Corp",
+      "source_span": null
+    },
+    {
+      "id": 3,
+      "name": "earnings",
+      "value": 69624.0,
+      "unit": "CAD",
+      "period": "2022-03-01—2022-03-11",
+      "scope": "Salona Global Medical Device Corp",
+      "source_span": null
+    },
+    {
+      "id": 4,
+      "name": "revenues",
+      "value": 10114100.0,
+      "unit": "CAD",
+      "period": "2022-03-01—2022-03-11",
+      "scope": "Salona Global Medical Device Corp",
+      "source_span": null
+    },
+    {
+      "id": 5,
+      "name": "earnings",
+      "value": -3255653.0,
+      "unit": "CAD",
+      "period": "2022-03-01—2022-03-11",
+      "scope": "Salona Global Medical Device Corp",
+      "source_span": null
+    },
+    {
+      "id": 6,
+      "name": "revenues",
+      "value": 1371197.0,
+      "unit": "CAD",
+      "period": "2022-03-12—2022-05-31",
+      "scope": "Salona Global Medical Device Corp",
+      "source_span": null
+    },
+    {
+      "id": 7,
+      "name": "earnings",
+      "value": 96629.0,
+      "unit": "CAD",
+      "period": "2022-03-12—2022-05-31",
+      "scope": "Salona Global Medical Device Corp",
+      "source_span": null
+    },
+    {
+      "id": 8,
+      "name": "revenues",
+      "value": 1436750.0,
+      "unit": "CAD",
+      "period": "2022-03-01—2022-03-11",
+      "scope": "Salona Global Medical Device Corp",
+      "source_span": null
+    },
+    {
+      "id": 9,
+      "name": "earnings",
+      "value": 69624.0,
+      "unit": "CAD",
+      "period": "2022-03-01—2022-03-11",
+      "scope": "Salona Global Medical Device Corp",
+      "source_span": null
+    },
+    {
+      "id": 10,
+      "name": "revenues",
+      "value": 10114100.0,
+      "unit": "CAD",
+      "period": "2022-03-01—2022-03-11",
+      "scope": "Salona Global Medical Device Corp",
+      "source_span": null
+    },
+    {
+      "id": 11,
+      "name": "earnings",
+      "value": -3255653.0,
+      "unit": "CAD",
+      "period": "2022-03-01—2022-03-11",
+      "scope": "Salona Global Medical Device Corp",
+      "source_span": null
+    }
+  ]
+}
