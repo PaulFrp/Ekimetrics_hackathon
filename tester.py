@@ -6,11 +6,13 @@ from dotenv import load_dotenv
 from openai import OpenAI
 
 _DEFAULT_MODEL = "openai/gpt-oss-120b"
-load_dotenv("./..")
-# === CONFIGURE PATHS HERE ===
+load_dotenv()
+
+
+#config the paths
 ORIGINAL_PATH = "kpi-hackathon-jarvis/examples/finance_short/example_01/ground_truth.json"
 BIASED_PATH = "data/biased.json"
-# ============================
+
 
 SYSTEM_PROMPT = (
     "You are a financial data auditor. You will receive a JSON array of KPI entries. "
@@ -36,7 +38,7 @@ def compute_ground_truth(original: list, biased: list) -> dict[int, bool]:
         eid = entry["id"]
         orig = original_by_id.get(eid)
         if orig is None:
-            # Entry not in original → treat as hallucinated
+            # Entry not in original, sp treat as hallucinated
             labels[eid] = True
         else:
             labels[eid] = any(entry.get(k) != orig.get(k) for k in set(entry) | set(orig) if k != "id")
